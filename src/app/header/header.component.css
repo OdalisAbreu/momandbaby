@@ -1,0 +1,19 @@
+.header{
+    background-color: #74D5CB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+#logo-blanco{
+    width: 400px;
+    
+}
+
+.headercIcoc{
+    margin-left: 5px
+}
+.social-icon{
+    width: 80px;
+    margin: 10px
+}
