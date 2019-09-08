@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { MenuComponent } from './menu/menu.component';
 import { ContainerComponent } from './container/container.component';
+import { CreateProducComponent } from './create-produc/create-produc.component';
+import { ImageCropperModule } from 'ngx-image-cropper';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { ContainerComponent } from './container/container.component';
     HomeComponent,
     CarouselComponent,
     MenuComponent,
-    ContainerComponent
+    ContainerComponent,
+    CreateProducComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ImageCropperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,7 +5,7 @@ import { AngularFireList, AngularFireDatabase } from 'angularfire2/database';
   providedIn: 'root'
 })
 export class ProductService {
-  pribate productsDb: AngularFireList<product>
+  // pribate productsDb: 
 
   constructor() { }
 }
