@@ -1,0 +1,25 @@
+.navbar-dark{
+    color: white
+}
+.ul{
+    width: -webkit-fill-available;
+    justify-content: center;
+    
+}
+
+.menuContainer{
+    background-color: #74D5CB;
+    -webkit-box-shadow: 0px -4px 6px -5px rgba(255,255,255,1);
+    -moz-box-shadow: 0px -4px 6px -5px rgba(255,255,255,1);
+    box-shadow: 0px -4px 6px -5px rgba(255,255,255,1);
+}
+
+.nav-link{
+    color:white;
+    font-weight: bold;
+}
+
+.nav-item{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}

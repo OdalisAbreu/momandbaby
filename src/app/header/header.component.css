@@ -4,9 +4,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    height: 50px;
 }
 #logo-blanco{
-    width: 400px;
+    width: 200px;
     
 }
 
@@ -14,6 +15,6 @@
     margin-left: 5px
 }
 .social-icon{
-    width: 80px;
+    width: 40px;
     margin: 10px
 }

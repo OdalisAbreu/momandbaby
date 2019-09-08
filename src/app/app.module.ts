@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { MenuComponent } from './menu/menu.component';
+import { ContainerComponent } from './container/container.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MenuComponent } from './menu/menu.component';
     HeaderComponent,
     HomeComponent,
     CarouselComponent,
-    MenuComponent
+    MenuComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,
