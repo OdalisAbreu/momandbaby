@@ -1,4 +1,4 @@
-export interface product {
+export interface Product {
     $key?: string;
     idProduct: string;
     name: string;
@@ -12,12 +12,11 @@ export interface product {
 
 }
 
-export enum category{
+export enum category {
     conjuntos = 1,
     vestidos = 2,
     pantalones = 3,
     blusas = 4,
-    accesorios = 5
-
-
+    accesorios = 5,
+    base = 6
 }

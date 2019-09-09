@@ -10,6 +10,10 @@ import { MenuComponent } from './menu/menu.component';
 import { ContainerComponent } from './container/container.component';
 import { CreateProducComponent } from './create-produc/create-produc.component';
 import { ImageCropperModule } from 'ngx-image-cropper';
+import { ProductService } from './services/product.service';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 @NgModule({
   declarations: [
@@ -24,9 +28,11 @@ import { ImageCropperModule } from 'ngx-image-cropper';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ImageCropperModule
+    ImageCropperModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

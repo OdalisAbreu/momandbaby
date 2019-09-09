@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyAXXRCDwoiZ0VeQLYqAQxE77yzZtfVo3rg",
-    authDomain: "chatmomandbabyclothes.firebaseapp.com",
-    databaseURL: "https://chatmomandbabyclothes.firebaseio.com",
-    projectId: "chatmomandbabyclothes",
-    storageBucket: "",
-    messagingSenderId: "1036502783621",
-    appId: "1:1036502783621:web:32d9182e7761b789"
+    apiKey: 'AIzaSyCWm0d-LQTEGMtIGOCKerTwQIWzmDudCX0',
+    authDomain: 'momandbaby-88954.firebaseapp.com',
+    databaseURL: 'https://momandbaby-88954.firebaseio.com',
+    projectId: 'momandbaby-88954',
+    storageBucket: '',
+    messagingSenderId: '561685766832',
+    appId: '1:561685766832:web:d33204509e4bb5cd315175'
   }
 };
 
