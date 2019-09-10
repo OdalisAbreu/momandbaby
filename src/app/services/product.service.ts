@@ -33,5 +33,4 @@ export class ProductService {
    delete(newProductData.$key);
    this.db.list('/products').update($key, newProductData);
  }
-
 }
