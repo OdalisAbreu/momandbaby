@@ -9,6 +9,7 @@ export interface Product {
     quantity: number;
     numCategory: category;
     active: boolean;
+    image?: string;
 
 }
 
