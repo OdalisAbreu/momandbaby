@@ -1,0 +1,53 @@
+[33mcommit 81e264ea84ad1a42d7e12f67c91719c13ba5f70e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Mon Sep 9 17:49:34 2019 -0400
+
+    A►ñadiendo productos
+
+[33mcommit 602208f5fb1a2db915a4ac074cbf2ccfa43d6434[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Sun Sep 8 17:51:59 2019 -0400
+
+    commit2 integrando firbase
+
+[33mcommit 30e2dba3cf88f9e8efac443805f6494790ad6734[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Sat Sep 7 23:08:18 2019 -0400
+
+    integrando firebase
+
+[33mcommit b20e60784e2b2133f71972ca711c268ed594e710[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Sat Sep 7 22:45:29 2019 -0400
+
+    Agregando el componente del container
+
+[33mcommit a71ce232d4f18335fed89ebf3b52cd409cc86fac[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Fri Sep 6 17:03:38 2019 -0400
+
+    menu 1
+
+[33mcommit 9e5d9c1e08fba452229fef08d504fa6717aab0c0[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Fri Sep 6 16:35:37 2019 -0400
+
+    iniciando menu
+
+[33mcommit 25e6cf56d7d833424124495f40be2af755469d26[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Fri Sep 6 16:33:09 2019 -0400
+
+    header and carousel
+
+[33mcommit 5bfcf647a45849f0366e707cc39cfbac6a1ecc43[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Fri Sep 6 12:21:16 2019 -0400
+
+    A comenzar con el header
+
+[33mcommit db9d2e4fa6e9256f1b89585bf0112a153089018e[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Wed Sep 4 20:04:24 2019 -0400
+
+    initial commit

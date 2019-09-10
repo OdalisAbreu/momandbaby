@@ -12,29 +12,33 @@ import { take } from 'rxjs/operators';
 export class CreateProducComponent implements OnInit {
   imageChangedEvent: any = '';
   croppedImage: any = '';
-  public products$: Observable<Product[]>;
-  public selectedProduct: Product;
+//   public products$: Observable<Product[]>;
+//   public selectedProduct: Product;
 
-  constructor(private productService: ProductService) { }
+  constructor() { }
 
   ngOnInit() {
-      this.products$ = this.productService.getproducts();
-      this.productService.getproducts().pipe(take(1)).subscribe(products => {
-          if (products.length === 0) {
-              const product: Product = {
-                  idProduct: '12',
-                  name: 'Primer Producto',
-                  description: 'Nuestro primer producto',
-                  price: 10,
-                  color: 'White',
-                  size: 'Xl',
-                  quantity: 5,
-                  category: category.base,
-                  active: false
 
-              };
-          }
-      });
+
+
+
+    //   this.products$ = this.productService.getproducts();
+    //   this.productService.getproducts().pipe(take(1)).subscribe(products => {
+    //       if (products.length === 0) {
+    //           const product: Product = {
+    //               idProduct: '12',
+    //               name: 'Primer Producto',
+    //               description: 'Nuestro primer producto',
+    //               price: 10,
+    //               color: 'White',
+    //               size: 'Xl',
+    //               quantity: 5,
+    //               category: category.base,
+    //               active: false
+
+    //           };
+    //       }
+    //   });
 
     //   newProduct() {
     //     this.selectedProduct = null;

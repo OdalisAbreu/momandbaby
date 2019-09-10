@@ -6,6 +6,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { MenuComponent } from './menu/menu.component';
 import { ContainerComponent } from './container/container.component';
 import { CreateProducComponent } from './create-produc/create-produc.component';
+import { ProductComponent } from './product/product.component';
 
 
 
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'carousel', component: CarouselComponent},
   {path: 'menu', component: MenuComponent},
   {path: 'container', component: ContainerComponent},
-  {path: 'new', component: CreateProducComponent}
+  {path: 'new', component: CreateProducComponent},
+  {path: 'product', component: ProductComponent}
 ];
 
 @NgModule({

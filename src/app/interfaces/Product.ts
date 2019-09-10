@@ -7,16 +7,16 @@ export interface Product {
     color: string;
     size: string;
     quantity: number;
-    category: category;
+    numCategory: category;
     active: boolean;
 
 }
 
 export enum category {
-    conjuntos = 1,
-    vestidos = 2,
-    pantalones = 3,
-    blusas = 4,
-    accesorios = 5,
-    base = 6
+    Conjuntos = 1,
+    Vestidos = 2,
+    Pantalones = 3,
+    Blusas = 4,
+    Accesorios = 5,
+    Base = 6
 }

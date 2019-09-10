@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { ProductService } from './services/product.service';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +25,16 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     CarouselComponent,
     MenuComponent,
     ContainerComponent,
-    CreateProducComponent
+    CreateProducComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ImageCropperModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    FormsModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
