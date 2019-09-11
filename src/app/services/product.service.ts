@@ -9,11 +9,10 @@ import { map } from 'rxjs/operators';
 })
 export class ProductService {
    private productsDb: AngularFireList<Product>;
-
   constructor(private db: AngularFireDatabase) {
-    this.productsDb = this.db.list('products', ref => ref.orderByChild('name'));
+    this.productsDb = this.db.list('/products', ref => ref.orderByChild('name'));
  }
- getproducts(): Observable<Product[]> {
+ getProducts(): Observable<Product[]> {
    return this.productsDb.snapshotChanges().pipe(
      map(changes => {
        return changes.map(c => ({ $key: c.payload.key, ...c.payload.val()}));
@@ -32,5 +31,12 @@ export class ProductService {
    const $key = newProductData.$key;
    delete(newProductData.$key);
    this.db.list('/products').update($key, newProductData);
+ }
+
+ getProduct() {
+   return this.db.list('/products');
+ }
+ getproductById(uid) {
+   return this.db.object('/products' + uid);
  }
 }

@@ -1,0 +1,28 @@
+.container{
+    /* background-color: aqua; */
+}  
+.row{
+    justify-content: space-evenly;
+}
+.product{
+    margin: 5px;
+    border: solid 1px rgba(90, 84, 90, 0.308) ;
+    border-radius: 10px;
+    /* -webkit-box-shadow: inset 0px 0px 11px -1px rgba(0,0,0,0.64);
+    -moz-box-shadow: inset 0px 0px 11px -1px rgba(0,0,0,0.64);
+    box-shadow: inset 0px 0px 11px -1px rgba(0,0,0,0.64); */
+    background-color: white;
+}
+
+.imgcontainer{
+ width: 200px;
+ height: 200PX;
+ align-items: center;
+ margin-top: 5px;
+ margin-bottom: 5px;
+ padding: 3px;
+}
+
+.product p{
+    text-align: right;
+}

@@ -7,6 +7,8 @@ import { MenuComponent } from './menu/menu.component';
 import { ContainerComponent } from './container/container.component';
 import { CreateProducComponent } from './create-produc/create-produc.component';
 import { ProductComponent } from './product/product.component';
+import { BaseComponent } from './base/base.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -17,7 +19,9 @@ const routes: Routes = [
   {path: 'menu', component: MenuComponent},
   {path: 'container', component: ContainerComponent},
   {path: 'new', component: CreateProducComponent},
-  {path: 'product', component: ProductComponent}
+  {path: 'product', component: ProductComponent},
+  {path: 'base', component: BaseComponent},
+  {path: 'footer', component: FooterComponent}
 ];
 
 @NgModule({

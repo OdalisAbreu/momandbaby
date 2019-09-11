@@ -17,10 +17,10 @@
                 (loadImageFailed)="loadImageFailed()"
                 class="col-md-6"></image-cropper>
         </div>
-            <input type="file" (change)="fileChangeEvent($event)" />
-            <button type="submit" (click)="newImage()">Submit</button>
-            
-        <form  #productForm="ngForm" novalidate (ngSubmit)="onSubmit(productForm)">
+        <input type="file" (change)="fileChangeEvent($event)" />
+        
+        
+        <form  #productForm="ngForm" novalidate (ngSubmit)="onSubmit(productForm); productForm.reset()">
             <div class="form-group">
                 <label for="idProduct">Numero del Producto</label>
                 <input type="text" class="form-control" name="idProduct" [ngModel]="Product?.idProduct" ngModel required>
@@ -64,7 +64,7 @@
                 <label for="active" class="form-check-label">Activo</label>
             </div>
             <div class="submit-container">
-                <button type="submit">Submit</button>
+                <button type="submit" >Submit</button>
               </div>
             
         </form>

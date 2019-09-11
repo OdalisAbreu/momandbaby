@@ -12,36 +12,39 @@ import { ImageCroppedEvent } from 'ngx-image-cropper';
 export class ProductComponent implements OnInit {
   imageChangedEvent: any = '';
   croppedImage: any = '';
-  public categoria = Object.keys(category).slice(Object.keys(category).length / 2)
-  .map(key => ({
-    label: key,
-    key: category[key]
-  }));
+  imgName: any = '';
+  LinkImage: any = '';
+  public categoria = Object.keys(category)
+    .slice(Object.keys(category).length / 2)
+    .map(key => ({
+      label: key,
+      key: category[key]
+    }));
   constructor(private productService: ProductService) {}
 
-  ngOnInit() {
-    console.log(this.categoria);
-  }
+  ngOnInit() {}
 
   private newProduct(productFormValue) {
     const key = this.productService.addProduct(productFormValue).key;
     const productFormValueKey = {
       ...productFormValue,
-      key
+      key,
     };
   }
-  newImage(imageForm: NgForm) {
-    console.log(this.imageChangedEvent);
-  }
   onSubmit(productForm: NgForm) {
-    const productFormValue = { ...productForm.value };
+    const productFormValue = { ...productForm.value, image: this.LinkImage};
     if (productForm.valid) {
     }
     this.newProduct(productFormValue);
+    alert('Producto Creado Correctamente');
   }
-      /*Agregar imagen*/
+
+  /*Agregar imagen*/
   fileChangeEvent(event: any): void {
-    this.imageChangedEvent = event;
+    this.imgName =  event.target.files[0].name,
+    this.LinkImage = 'assets/img/product/' + this.imgName,
+     this.imageChangedEvent = event,
+     console.log(this.imgName);
   }
   imageCropped(event: ImageCroppedEvent) {
     this.croppedImage = event.base64;
@@ -56,5 +59,4 @@ export class ProductComponent implements OnInit {
     // show message
   }
   /*Agregar imagen*/
-
 }

@@ -1,0 +1,18 @@
+<div class="container">
+    <!-- <img src="assets/img/product/image1.jpg" alt=""> -->
+    <div>
+        <div class="row">
+            
+            <div class="card" style="width: 18rem;" *ngFor="let producto of product" class="product col-md-3">
+                <div class="imgcontainer">
+                    <img [src]="producto.image" class="card-img-top" alt="...">
+                </div>
+                    <div class="card-body">
+                    <h5 class="card-title">{{producto.name}}</h5>
+                    <p class="card-text">Precio: {{producto.price}}</p>
+                    <a href="#" class="btn btn-primary" (click)="verProduct() ">Go somewhere</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

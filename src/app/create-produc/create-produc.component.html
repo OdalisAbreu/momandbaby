@@ -1,21 +1,11 @@
 <div class="container">
+        <input type="file" (change)="onFileSelected($event)">
+ 
+
+
+
 <form>
-    <div class="productImg">
-        <img [src]="croppedImage"alt="">
-    </div>
-    <input type="file" (change)="fileChangeEvent($event)" />
-    <image-cropper
-        [imageChangedEvent]="imageChangedEvent"
-        [maintainAspectRatio]="true"
-        [aspectRatio]="1 / 1"
-        [resizeToWidth]="400"
-        format="png"
-        (imageCropped)="imageCropped($event)"
-        (imageLoaded)="imageLoaded()"
-        (cropperReady)="cropperReady()"
-        (loadImageFailed)="loadImageFailed()"
-    ></image-cropper>
-    
+
             <div class="form-group">
               <label for="Codigo">Codigo del producto</label>
               <input type="text" class="form-control" id="idProduct" aria-describedby="textHelp" placeholder="Codigo">

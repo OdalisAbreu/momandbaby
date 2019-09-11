@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,9 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { ProductComponent } from './product/product.component';
+import { BaseComponent } from './base/base.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +30,9 @@ import { ProductComponent } from './product/product.component';
     MenuComponent,
     ContainerComponent,
     CreateProducComponent,
-    ProductComponent
+    ProductComponent,
+    BaseComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,8 @@ import { ProductComponent } from './product/product.component';
     ImageCropperModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
