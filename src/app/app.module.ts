@@ -19,6 +19,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { ProductComponent } from './product/product.component';
 import { BaseComponent } from './base/base.component';
 import { FooterComponent } from './footer/footer.component';
+import { ViewProductComponent } from './view-product/view-product.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { FooterComponent } from './footer/footer.component';
     CreateProducComponent,
     ProductComponent,
     BaseComponent,
-    FooterComponent
+    FooterComponent,
+    ViewProductComponent
   ],
   imports: [
     BrowserModule,
