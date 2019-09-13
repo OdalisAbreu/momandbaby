@@ -20,6 +20,7 @@ import { ProductComponent } from './product/product.component';
 import { BaseComponent } from './base/base.component';
 import { FooterComponent } from './footer/footer.component';
 import { ViewProductComponent } from './view-product/view-product.component';
+import { LocateComponent } from './locate/locate.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ViewProductComponent } from './view-product/view-product.component';
     ProductComponent,
     BaseComponent,
     FooterComponent,
-    ViewProductComponent
+    ViewProductComponent,
+    LocateComponent
   ],
   imports: [
     BrowserModule,

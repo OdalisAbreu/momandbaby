@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { Product } from '../interfaces/Product';
 import { ProductService } from '../services/product.service';
 
@@ -23,6 +22,9 @@ export class BaseComponent implements OnInit {
           console.log(error);
         }
       );
+  }
+  verProduct(item) {
+    localStorage.setItem('producto', JSON.stringify(item));
   }
 
   ngOnInit() {

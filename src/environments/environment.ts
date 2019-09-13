@@ -12,6 +12,9 @@ export const environment = {
     storageBucket: '',
     messagingSenderId: '561685766832',
     appId: '1:561685766832:web:d33204509e4bb5cd315175'
+  },
+  mapbox:{
+    key: 'pk.eyJ1Ijoib2RhbGlzZGFyaWVsIiwiYSI6ImNqenpwMXVoOTF2aHMzYm12cGR5dG01aXYifQ.cdtx-ueqrMzEmOs5pQKicQ'
   }
 };
 

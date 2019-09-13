@@ -10,6 +10,8 @@ import { ProductComponent } from './product/product.component';
 import { BaseComponent } from './base/base.component';
 import { FooterComponent } from './footer/footer.component';
 import { ViewProductComponent } from './view-product/view-product.component';
+import { LocateComponent } from './locate/locate.component';
+
 
 
 
@@ -23,7 +25,8 @@ const routes: Routes = [
   {path: 'product', component: ProductComponent},
   {path: 'base', component: BaseComponent},
   {path: 'footer', component: FooterComponent},
-  {path: 'view', component: ViewProductComponent}
+  {path: 'view', component: ViewProductComponent},
+  {path: 'locate', component: LocateComponent}
 ];
 
 @NgModule({
